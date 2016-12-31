@@ -6,6 +6,15 @@
 	<title>阿迓酒馆</title>
 	<link href="lp.css" rel="stylesheet" media="screen" type="text/css">
 	<meta name="description" content="个人主页">
+	<script id="jquery_183" type="text/javascript" class="library" src="jquery-1.js"></script><style type="text/css">
+:root .adlink
+{ display: none !important; }</style>
+	<style type="text/css">
+:root *[np000z8][hidden] { display: none !important; }</style>
+
+
+	
+
 </head>
 
 <body>
@@ -25,7 +34,52 @@
 	<div id="top_logo"><img src="../toplogo.png"></div>
 	<div id="top_title"><img id="top_title01" alt="阿迓酒馆" src="../toptitle01.png"><hr class="top_hr_style01"></div>
 	<article id="about_article">
-		<a style="color:green" href="../index.html">第一次作业</a>
+		<h1 style="text-align:center;font-size:180%"><strong>"今天也要我给你占卜吗？"</strong></h1><br/>
+		<p style="font-size:130%">欢迎回来，dd，神秘而喜欢故弄玄虚的吉普赛人随时都可以为你占卜。</p>
+		<p style="text-indent:0em;text-align: center"><img src="akane.jpg" style="text-indent:0em;width: 80%;height:80%;"></p>
+		<p style="font-size:130%">准备好了吗？</p>
+		<p style="font-size:130%">那就让我来看看</p>
+		<p style="font-size:130%">今天的dd......</p>
+		<div class="container">
+			<div class="date"></div>
+			<div class="good">
+				<div class="title">
+					<table>
+						<tbody><tr><td>宜</td></tr>
+					</tbody></table>
+				</div>
+				<div class="content">
+					<ul><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li></ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="split"></div>
+			<div class="bad">
+				<div class="title">
+					<table>
+						<tbody><tr><td>不宜</td></tr>
+					</tbody></table>
+				</div>
+				<div class="content">
+					<ul><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li><li><div class="name"></div><div class="description"></div></li></ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="split"></div>
+			<div class="line-tip">
+				<strong>座位朝向：</strong>面向<span class="direction_value">西方</span>自习，效率最高。
+			</div>
+			<div class="line-tip">
+				<strong>今日宜饮：</strong><span class="drink_value"></span>
+			</div>
+			<div class="line-tip">
+				<strong>欧气指数：</strong><span class="goddes_value"></span>
+			</div>
+			
+		</div>
+
+
+
 	</article>
 	<ul id="top_navlist">
 			<a class="top_nav" href="../index.html"><li>"去其他地方逛逛"</li></a>
@@ -49,4 +103,361 @@ luoht14@163.com
 </div>
 
 
-</body></html>
+</body>
+
+<style>body * {
+	font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;
+}
+.container {
+	width: 400px;
+	margin: 0 auto 50px;
+}
+
+
+.date{
+	font-size:17pt;
+	font-weight: bold;
+	line-height: 30pt;
+	text-align: center;
+	color: white;
+}
+
+.split, .clear {
+	clear: both;
+	height: 1px;
+	overflow-y: hidden;
+}
+
+.good, .bad {
+	clear: both;
+	position: relative;
+}
+
+.bad {
+	/*top: -1px;*/
+}
+
+.good .title, .bad .title {
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30pt;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+
+.good .title>table, .bad .title>table {
+	position:absolute;
+	width:100%;
+	height:100%;
+	border:none;
+}
+
+.good .title {
+	background: #ffee44;
+}
+
+.someday .good .title {
+	background: #aaaaaa;
+}
+
+.bad .title {
+	background: #ff4444;
+	color: #fff;
+}
+
+.someday .bad .title {
+	background: #666666;
+	color: #fff;
+}
+
+.good .content, .bad .content {
+	margin-left: 115px;
+	padding-right: 10px;
+	padding-top: 1px;
+	font-size:15pt;
+}
+
+.someday .good {
+	background: #dddddd;
+}
+
+.someday .bad {
+	background: #aaaaaa;
+}
+
+.good {
+	background: #ffffaa;
+}
+
+.bad {
+	background: #ffddd3;
+}
+
+.content ul {
+	list-style: none;
+	margin:10px 0 0;
+	padding:0;
+}
+
+.content ul li {
+	line-height:150%;
+	font-size: 15pt;
+	font-weight: bold;
+	color: #fff;
+}
+
+.content ul li div.description {
+	font-size: 11pt;
+	font-weight: normal;
+	color: #ddd;
+	line-height: 110%;
+	margin-bottom: 10px;
+}
+
+.line-tip {
+	font-size: 11pt;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #eee;
+}
+
+.direction_value {
+	color:#5b5;
+	font-weight: bold;
+}
+
+.someday .direction_value {
+	color:#888;
+}
+
+.goddes_value {
+	color: #f87;
+}
+
+.someday .goddes_value {
+	color: #777;
+}
+
+.comment {
+	margin-top: 50px;
+	font-size: 11pt;
+	margin-left: 10px;
+}
+
+</style>
+
+
+
+<script>//
+
+/*
+ * 注意：本程序中的“随机”都是伪随机概念，以当前的天为种子。
+ */
+function random(dayseed, indexseed) {
+	var n = dayseed % 11117;
+	for (var i = 0; i < 100 + indexseed; i++) {
+		n = n * n;
+		n = n + 41;
+		n = n % 11117;   // 11117 是个质数
+	}
+	return n;
+}
+
+var today = new Date();
+var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+
+var weeks = ["日","一","二","三","四","五","六"];
+var directions = ["北方","东北方","东方","东南方","南方","西南方","西方","西北方"];
+var activities = [
+	{name:"写数学作业", good:"今天没有数学作业可以难倒dd",bad:"写完就找不到了"},
+	{name:"白天洗澡", good:"在洗澡的时候会有创作大作的灵感",bad:"热水供应不稳定", weekend: true},
+	{name:"出门透透气", good:"可以拍到不错的景色",bad:"会偶遇不想碰到的人", weekend: true},
+	{name:"看耽美文", good:"被剧情击中内心",bad:"被喂一口翔", weekend: true},
+	{name:"尝试新的手游", good:"短时间内不会弃坑",bad:"dd之后被各种作业追着跑",weekend: true},
+	{name:"整理寝室", good:"提高dd的生活质量",bad:"整理的时候发现一些东西不见了",weekend: true},
+	{name:"使用网易云音乐", good:"会给dd推荐良曲",bad:"喜欢的曲子评论区里正在撕逼",weekend: true},
+	{name:"去图书馆借书", good:"会意外发现其他想借的书",bad:"想借的书刚刚被人借走"},
+	{name:"向别人安利", good:"安利大成功",bad:"安利成功率低",weekend: true},
+	{name:"在教室坐前排", good:"听课效率翻倍",bad:"dd可能会被老师就近提问"},
+	{name:"尝试新的理财手段", good:"会比现在好很多",bad:"可能会被坑",weekend: true},
+	{name:"晚上画画", good:"期待dd的大作",bad:"", weekend: true},
+	{name:"看轻百合番", good:"心灵得到治愈",bad:"弹幕质量很差", weekend: true},
+	{name:"和室友聊天", good:"聊到一些有趣的事情",bad:"被传播负能量", weekend: true},
+	{name:"浏览知乎和黄易", good:"获取新的姿势",bad:"浪费很多时间，作业写不完了", weekend: true},
+	{name:"看电影", good:"好片啊好片",bad:"比预想的差一点",weekend: true},
+	{name:"氪金", good:"很有满足感，并且会变欧",bad:"冲动消费",weekend: true},
+	{name:"找本子看", good:"会看到质量很高的本子",bad:"找半天都找不到好的本子",weekend: true},
+	{name:"尝试新的餐馆", good:"好吃到爆衣",bad:"",weekend: true},
+	{name:"推gal", good:"",bad:"",weekend: true},
+	{name:"参加学校活动", good:"",bad:""},
+	{name:"追新番", good:"这集神展开",bad:"下周出了一起看比较好",weekend: true},
+	{name:"写论文", good:"信手拈来",bad:"如鲠在喉",weekend: true},
+
+];
+
+var specials = [
+	{date:20170101, type:'good', name:'新年快乐！', description:'dd顺利的2017年的开始。'}
+];
+
+
+
+
+
+var drinks = ["水","茶","红茶","绿茶","咖啡","奶茶","可乐","鲜奶","豆奶","果汁","果味汽水","苏打水","运动饮料","酸奶","酒"];
+
+function is_someday() {
+	return today.getMonth() == 5 && today.getDate() == 4;
+}
+
+function getTodayString() {
+	return "今天是" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()];
+}
+
+function star(num) {
+	var result = "";
+	var i = 0;
+	while (i < num) {
+		result += "★";
+		i++;
+	}
+	while(i < 5) {
+		result += "☆";
+		i++;
+	}
+	return result;
+} 
+
+// 生成今日运势
+function pickTodaysLuck() {
+  var _activities = filter(activities);
+    
+	var numGood = random(iday, 98) % 3 + 2;
+	var numBad = random(iday, 87) % 3 + 2;
+	var eventArr = pickRandomActivity(_activities, numGood + numBad);
+	
+	var specialSize = pickSpecials();
+	
+	for (var i = 0; i < numGood; i++) {
+		addToGood(eventArr[i]);
+	}
+	
+	for (var i = 0; i < numBad; i++) {
+		addToBad(eventArr[numGood + i]);
+	}
+}
+
+// 去掉一些不合今日的事件
+function filter(activities) {
+    var result = [];
+    
+    // 周末的话，只留下 weekend = true 的事件
+    if (isWeekend()) {
+        
+        for (var i = 0; i < activities.length; i++) {
+            if (activities[i].weekend) {
+                result.push(activities[i]);
+            }
+        }
+        
+        return result;
+    }
+    
+    return activities;
+}
+
+function isWeekend() {
+    return today.getDay() == 0 || today.getDay() == 6;
+}
+
+// 添加预定义事件
+function pickSpecials() {
+	var specialSize = [0,0];
+	
+	for (var i = 0; i < specials.length; i++) {
+		var special = specials[i];
+		
+		if (iday == special.date) {
+			if (special.type == 'good') {
+				specialSize[0]++;
+				addToGood({name: special.name, good: special.description});
+			} else {
+				specialSize[1]++;
+				addToBad({name: special.name, bad: special.description});
+			}
+		}
+	}
+	
+	return specialSize;
+}
+
+// 从 activities 中随机挑选 size 个
+function pickRandomActivity(activities, size) {
+	var picked_events = pickRandom(activities, size);
+	
+	for (var i = 0; i < picked_events.length; i++) {
+		picked_events[i] = parse(picked_events[i]);
+	}
+	
+	return picked_events;
+}
+
+// 从数组中随机挑选 size 个
+function pickRandom(array, size) {
+	var result = [];
+	
+	for (var i = 0; i < array.length; i++) {
+		result.push(array[i]);
+	}
+	
+	for (var j = 0; j < array.length - size; j++) {
+		var index = random(iday, j) % result.length;
+		result.splice(index, 1);
+	}
+	
+	return result;
+}
+
+// 解析占位符并替换成随机内容
+function parse(event) {
+	var result = {name: event.name, good: event.good, bad: event.bad};  // clone
+	
+	if (result.name.indexOf('%v') != -1) {
+		result.name = result.name.replace('%v', varNames[random(iday, 12) % varNames.length]);
+	}
+	
+	if (result.name.indexOf('%t') != -1) {
+		result.name = result.name.replace('%t', tools[random(iday, 11) % tools.length]);
+	}
+	
+	if (result.name.indexOf('%l') != -1) {
+		result.name = result.name.replace('%l', (random(iday, 12) % 247 + 30).toString());
+	}
+	
+	return result;
+}
+
+// 添加到“宜”
+function addToGood(event) {
+	$('.good .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.good + '</div></li>');
+}
+
+// 添加到“不宜”
+function addToBad(event) {
+	$('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
+}
+
+$(function(){
+	if (is_someday()) {document.body.className = 'someday'};
+	$('.date').html(getTodayString());
+	$('.direction_value').html(directions[random(iday, 2) % directions.length]);
+	$('.drink_value').html(pickRandom(drinks,2).join('，'));
+	$('.goddes_value').html(star(random(iday, 6) % 5 + 1));
+	pickTodaysLuck();
+});</script>
+
+
+
+</html>
